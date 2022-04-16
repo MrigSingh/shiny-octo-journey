@@ -3942,6 +3942,10 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+.brand-logo{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;

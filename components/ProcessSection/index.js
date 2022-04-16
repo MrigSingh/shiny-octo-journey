@@ -14,7 +14,7 @@ function ProcessSection() {
         <div className="row text-center text-white">
           <h1 className="display-3 fw-bold">Our Process</h1>
           <hr style={{ width: "100px", height: "3px" }} className="mx-auto" />
-          <p className="lead pt-1">We keep everything clear with you</p>
+          <p className="lead pt-1">We believe in good communication and a fully transparent development process.</p>
         </div>
         <div className="row process-row">
           <div className="col-md-2 col-lg-2 process-box pt-1 d-md-block d-lg-flex d-flex">

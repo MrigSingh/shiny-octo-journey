@@ -6,7 +6,7 @@ function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div className="container">
       <a className="navbar-brand" href="">
-        <Image src={logo} alt="logo image" />
+        <span className='brand-logo'><i className="fa fa-rocket" style={{fontSize: 30}}></i>{" "}WebsiteWala</span>
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

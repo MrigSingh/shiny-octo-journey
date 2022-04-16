@@ -10,7 +10,7 @@ function HeroSection() {
             <h1 className="display-2">
               <span className="display-2--intro">Welcome to WebsiteWala</span>
               <span className="display-2--description lh-base">
-                We can help you take your business online!
+              We will help you ship better apps, faster. Our team of expert engineers has created the best user experiences in some of the most popular apps worldwide.
               </span>
             </h1>
             <button type="button" className="rounded-pill btn-rounded">

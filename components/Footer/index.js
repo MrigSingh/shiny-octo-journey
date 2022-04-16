@@ -113,7 +113,7 @@ function Footer() {
       <div className="container mt-5">
         <div className="row text-white justify-content-center mt-3 pb-3">
           <div className="col-12 col-sm-6 col-lg-6 mx-auto">
-            <h5 className="text-capitalize fw-bold">WebsiteWala</h5>
+            <h5 className="text-capitalize fw-bold"><i className="fa fa-rocket" style={{fontSize: 30}}></i>{" "}WebsiteWala</h5>
             <hr
               className="bg-white d-inline-block mb-4"
               style={{width: 60, height: 2}}
