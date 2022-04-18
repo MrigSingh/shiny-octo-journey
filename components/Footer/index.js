@@ -1,4 +1,23 @@
+import { useState } from 'react';
+import { InlineWidget } from "react-calendly";
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  minWidth: 1100,
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  p: 4,
+};
+
 function Footer() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <footer className="footer">
       <div className="container">
@@ -20,9 +39,9 @@ function Footer() {
                 <path d="M15 3a6 6 0 0 1 6 6" />
               </svg>
             </div>
-            <div className="contact-box__info">
-              <a href="#" className="contact-box__info--title">
-                +91 8249331980
+            <div className="contact-box__info"  onClick={() => handleOpen()}>
+              <a style={{cursor: 'pointer'}} className="contact-box__info--title">
+                Book a meeting
               </a>
               <p className="contact-box__info--subtitle"> Mon-Fri 10am-6pm</p>
             </div>
@@ -47,8 +66,8 @@ function Footer() {
               </svg>
             </div>
             <div className="contact-box__info">
-              <a href="#" className="contact-box__info--title">
-                info@websitewala.com
+              <a href="mailto:info@websitewaala.in" className="contact-box__info--title">
+                info@websitewaala.in
               </a>
               <p className="contact-box__info--subtitle">Online support</p>
             </div>
@@ -74,7 +93,7 @@ function Footer() {
               </svg>
             </div>
             <div className="contact-box__info">
-              <a href="#" className="contact-box__info--title">
+              <a className="contact-box__info--title">
                 Mumbai, India
               </a>
               <p className="contact-box__info--subtitle">Mumbai, IN</p>
@@ -113,7 +132,7 @@ function Footer() {
       <div className="container mt-5">
         <div className="row text-white justify-content-center mt-3 pb-3">
           <div className="col-12 col-sm-6 col-lg-6 mx-auto">
-            <h5 className="text-capitalize fw-bold"><i className="fa fa-rocket" style={{fontSize: 30}}></i>{" "}WebsiteWala</h5>
+            <h5 className="text-capitalize fw-bold"><i className="fa fa-rocket" style={{fontSize: 30}}></i>{" "}WebsiteWaala</h5>
             <hr
               className="bg-white d-inline-block mb-4"
               style={{width: 60, height: 2}}
@@ -195,19 +214,31 @@ function Footer() {
           <div className="row text-center text-white">
             <div className="col-12">
               <div className="footer-bottom__copyright">
-                &copy; Copyright 2021 <a href="#">WebsiteWala</a> {" "} | Created by{" "}
+                &copy; Copyright 2021 <a href="#">WebsiteWaala</a> {" "} | Created by{" "}
                 <a
                   href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WebsiteWala
+                  WebsiteWaala
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Modal
+      open={open}
+      onClose={handleClose}
+    >
+      <Box sx={style}>
+        <InlineWidget
+          className="calendly"
+          url="https://calendly.com/websitewaala/30min"
+          text="Click here to schedule!"
+        />
+      </Box>
+    </Modal>
     </footer>
   );
 }

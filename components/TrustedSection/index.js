@@ -11,7 +11,7 @@ function TrustedSection() {
     <section id="campanies" className="campanies">
     <div className="container">
       <div className="row text-center">
-        <h4 className="fw-bold lead mb-3">Trusted by campanies like</h4>
+        <h4 className="fw-bold lead mb-3">Trusted by companies like</h4>
         <div className="heading-line mb-5"></div>
       </div>
     </div>

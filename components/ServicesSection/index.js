@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from "next/image";
 import service1 from "../../public/assets/services/service-1.png";
 import service2 from "../../public/assets/services/service-2.png";
@@ -82,15 +83,17 @@ function ServiceSection() {
                 impedit rem, doloremque autem quibusdam blanditiis harum alias
                 hic accusantium maxime atque ratione magni repellat?
               </p>
-              <button
-                type="button"
-                className="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
+              <Link href="/services/web-development" passHref>
+                <button
+                  type="button"
+                  className="rounded-pill btn-rounded border-primary"
+                >
+                  Learn more
+                  <span>
+                    <i className="fas fa-arrow-right"></i>
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
