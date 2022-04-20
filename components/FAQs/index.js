@@ -1,159 +1,99 @@
-import React from "react";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function FAQs() {
   return (
-    <section id="faq" className="faq">
+    <section id="faq" className="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fillOpacity="1"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
       <div className="container">
-        <div className="row text-center">
-          <h1 className="display-3 fw-bold text-uppercase">faq</h1>
-          <div className="heading-line"></div>
-          <p className="lead">
-            frequently asked questions, get knowledge befere hand
-          </p>
+        <div className="row text-center text-white">
+          <h1 className="display-3 fw-bold">FAQs</h1>
+          <hr style={{ width: "100px", height: "3px" }} className="mx-auto" />
+          <p className="lead pt-1">What most of our clients are asking us more often ?</p>
         </div>
         <div className="row mt-5">
           <div className="col-md-12">
-            <div className="accordion" id="accordionExample">
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What are the main features?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>
-                      This is the first item&apos;s accordion body.
-                    </strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It&apos;s also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    do i have to pay again after trial
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>
-                      This is the second item&apos;s accordion body.
-                    </strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It&apos;s also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    How can I get started after trial?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>
-                      This is the third item&apos;s accordion body.
-                    </strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It&apos;s also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Can I be refunded if am not satisfied?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>
-                      This is the third item&apos;s accordion body.
-                    </strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It&apos;s also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Accordion className='shadow mb-3'>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h6>How can I contact you and quickly get a quote for my online project?</h6>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  The best way to reach us out is through the contact form under this section. Our team will reach out to you for further discussion. For a fast quote make sure your provide many project details.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion className='shadow mb-3'>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h6>
+                  Do you create designs from the ground up or should I provide them to you?
+                </h6>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  It really depends we have in house designers if you are not in position to provide designs we can help with that as well. Once design get finalize we move to development. And most important all of this updates regarding your projects will be communicated with you on regualr basis.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion className='shadow mb-3'>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h6>What is the cost of mobile app development?</h6>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                On the one hand, it isn&apos;t really as expensive as most of us may think. On the other, there is no simple answer to this inquiry due to multiple factors at play. Different developer rates, project complexity, and time it takes to build an app to impact the cost of making a mobile application. Talk to our experts to find out the price of your app!
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion className='shadow mb-3'>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h6>How to choose a mobile app development platform?</h6>
+              </AccordionSummary>
+              <AccordionDetails>
+                <p>Before choosing a mobile app development platform, consider answering these basic questions:</p>
+                <li>Who is the target audience of your app?</li>
+                <li>What are the users’ expectations?</li>
+                <li>What are the development costs?</li>
+                <li>What are the security implications?</li>
+                <li>How well will the mobile app development platform integrate with other platforms?</li>
+              </AccordionDetails>
+            </Accordion>
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fillOpacity="1"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
   );
 }
