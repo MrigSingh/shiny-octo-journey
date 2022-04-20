@@ -11042,7 +11042,7 @@ textarea.form-control-lg {
 .portfolio-box {
   position: relative;
   width: 100%;
-  height: 18.5rem;
+  height: 100%;
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #c685f7;
@@ -11285,3 +11285,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Additional CSS */
+
+.feature-box{
+  padding: 30px;
+  margin: 0 15px;
+  text-align: center;
+}
+.calendly-inline-widget{
+  height: 650px !important;
+}
+.services-row{
+  margin-top: 30px;
+  justify-content: center;
+}

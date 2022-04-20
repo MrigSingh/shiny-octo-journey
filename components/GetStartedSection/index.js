@@ -1,6 +1,28 @@
-import React from "react";
+import CircularProgress from '@mui/material/CircularProgress';
+import TextField from "@mui/material/TextField";
+import { useState } from "react";
 
 function GetStartedSection() {
+  const [values, setValues] = useState({});
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    (async () => {
+      const rawResponse = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values)
+      });
+      const content = await rawResponse.json();
+      console.log(content);
+      setLoading(false)
+      setValues({})
+    })();
+  }
   return (
     <section id="contact" className="get-started">
       <div className="container">
@@ -34,48 +56,71 @@ function GetStartedSection() {
           <div className="col-12 col-lg-6 bg-white shadow p-3">
             <div className="form w-100 pb-2">
               <h4 className="display-3--title mb-5">start your project</h4>
-              <form action="#" className="row">
+              <form action="#" className="row" onSubmit={(e) => handleSubmit(e)}>
                 <div className="col-lg-6 col-md mb-3">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    id="inputFirstName"
-                    className="shadow form-control form-control-lg"
+                  <TextField
+                    className="shadow"
+                    id="outlined-basic"
+                    label="Full Name"
+                    variant="outlined"
+                    fullWidth
+                    onChange={(e) =>
+                      setValues({ ...values, fullName: e.target.value })
+                    }
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-md mb-3">
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    id="inputLastName"
-                    className="shadow form-control form-control-lg"
+                  <TextField
+                    className="shadow"
+                    id="outlined-basic"
+                    label="Phone Number"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    onChange={(e) =>
+                      setValues({ ...values, phone: e.target.value })
+                    }
                   />
                 </div>
                 <div className="col-lg-12 mb-3">
-                  <input
+                  <TextField
                     type="email"
-                    placeholder="email address"
-                    id="inputEmail"
-                    className="shadow form-control form-control-lg"
+                    className="shadow"
+                    id="outlined-basic"
+                    label="Email Address"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    onChange={(e) =>
+                      setValues({ ...values, email: e.target.value })
+                    }
                   />
                 </div>
                 <div className="col-lg-12 mb-3">
-                  <textarea
-                    name="message"
-                    placeholder="message"
-                    id="message"
-                    rows="8"
-                    className="shadow form-control form-control-lg"
-                  ></textarea>
+                  <TextField
+                    type="email"
+                    className="shadow"
+                    id="outlined-basic"
+                    label="Some details about your project"
+                    variant="outlined"
+                    fullWidth
+                    multiline
+                    rows={8}
+                    required
+                    onChange={(e) =>
+                      setValues({ ...values, message: e.target.value })
+                    }
+                  />
                 </div>
                 <div className="text-center d-grid mt-1">
-                  <button
-                    type="button"
+                  {loading ? <CircularProgress style={{margin: 'auto'}} /> : <button
+                    type="submit"
                     className="btn btn-primary rounded-pill pt-3 pb-3"
                   >
                     submit
-                    <i className="fas fa-paper-plane"></i>
-                  </button>
+                    {/* <i className="fas fa-paper-plane"></i> */}
+                  </button>}
                 </div>
               </form>
             </div>
