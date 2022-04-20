@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import company1 from '../../public/assets/campanies/campany-1.png'
-import company2 from '../../public/assets/campanies/campany-2.png'
-import company3 from '../../public/assets/campanies/campany-3.png'
-import company4 from '../../public/assets/campanies/campany-4.png'
-import company5 from '../../public/assets/campanies/campany-5.png'
-import company6 from '../../public/assets/campanies/campany-6.png'
+// import Image from 'next/image'
+// import company1 from '../../public/assets/campanies/campany-1.png'
+// import company2 from '../../public/assets/campanies/campany-2.png'
+// import company3 from '../../public/assets/campanies/campany-3.png'
+// import company4 from '../../public/assets/campanies/campany-4.png'
+// import company5 from '../../public/assets/campanies/campany-5.png'
+// import company6 from '../../public/assets/campanies/campany-6.png'
 
 function TrustedSection() {
   return (

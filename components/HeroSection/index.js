@@ -16,6 +16,10 @@ const style = {
   p: 4,
 };
 
+const customLoader = ({ src }) => {
+  return src
+}
+
 function HeroSection() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -44,6 +48,7 @@ function HeroSection() {
                 src={hero}
                 alt="video illutration"
                 className="img-fluid"
+                loader={customLoader}
               />
               <a
                 href="#"

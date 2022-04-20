@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-// import logo from '../../public/assets/logo.png'
 import { useState } from 'react';
 import { InlineWidget } from "react-calendly";
 import Modal from '@mui/material/Modal';

@@ -4,6 +4,10 @@ import service1 from "../../public/assets/services/service-1.png";
 import service2 from "../../public/assets/services/service-2.png";
 import service3 from "../../public/assets/services/service-3.png";
 
+const customLoader = ({ src }) => {
+  return src
+}
+
 function ServiceSection() {
   return (
     <section id="services" className="services">
@@ -60,6 +64,7 @@ function ServiceSection() {
                 src={service1}
                 alt="marketing illustration"
                 className="img-fluid"
+                loader={customLoader}
               />
             </div>
           </div>
@@ -71,6 +76,7 @@ function ServiceSection() {
                 src={service2}
                 alt="web development illustration"
                 className="img-fluid"
+                loader={customLoader}
               />
             </div>
           </div>
@@ -124,6 +130,7 @@ function ServiceSection() {
                 src={service3}
                 alt="cloud hosting illustration"
                 className="img-fluid"
+                loader={customLoader}
               />
             </div>
           </div>

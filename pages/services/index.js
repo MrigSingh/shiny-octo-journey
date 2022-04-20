@@ -9,6 +9,10 @@ import trust from '../../public/assets/services/icons/trust.png'
 import ProcessSection from '../../components/ProcessSection'
 import GetStartedSection from '../../components/GetStartedSection'
 
+const customLoader = ({ src }) => {
+  return src
+}
+
 function Services() {
   return (
     <Fragment>
@@ -37,6 +41,7 @@ function Services() {
                   src={hero}
                   alt="video illutration"
                   className="img-fluid"
+                  loader={customLoader}
                 />
               </div>
             </div>
@@ -60,32 +65,32 @@ function Services() {
         <div className="container">
           <div className="row services-row">
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={light} alt="service" />
+              <Image src={light} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Blazing Fast Website</h5>
               <p>We keep our tach-stack updated with today&apos;s fast technology, we can deliver on any of your choices or what suits best for your purpose.</p>
             </div>
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={money} alt="service" />
+              <Image src={money} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Efficent Pricing</h5>
               <p>We dicuss pricing with full transparency before hand about your whole project. Don&apos;t worry on budget we got you covered over here.</p>
             </div>
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={mobile} alt="service" />
+              <Image src={mobile} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Mobile Responsive</h5>
               <p>We always try to build mobile-first websites/webapps so that your apps can we accessible on the fly for your customers.</p>
             </div>
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={plane} alt="service" />
+              <Image src={plane} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Trendy Designs</h5>
               <p>No designs? Give a chance to our designers they will always bring a smile on your face and on your products. You will be amazed!</p>
             </div>
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={mobile} alt="service" />
+              <Image src={mobile} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Quick Delivery</h5>
               <p>Believe me or not we can ship your products in such short span of time you won&apos;t believe.</p>
             </div>
             <div className="col-3 shadow feature-box mt-3">
-              <Image src={trust} alt="service" />
+              <Image src={trust} alt="service" loader={customLoader} />
               <h5 className="text-capitalize fw-bold mt-3">Increase Trust</h5>
               <p>Whenever we deliver we build trust with our clients which is one of the most important things in today&apos;s world.</p>
             </div>
