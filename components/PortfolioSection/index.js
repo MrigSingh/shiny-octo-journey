@@ -12,7 +12,7 @@ function PortfolioSection() {
       </p>
     </div>
     <div className="row mt-5 mb-4 g-3 text-center">
-      <div className="col-md-12">
+      <div className="col-md-12 tabs">
         <button className="btn btn-outline-primary" type="button">All</button>
         <button className="btn btn-outline-primary" type="button">websites</button>
         <button className="btn btn-outline-primary" type="button">design</button>
