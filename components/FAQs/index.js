@@ -28,7 +28,7 @@ function FAQs() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>How can I contact you and quickly get a quote for my online project?</Typography>
+                <h6>How can I contact you and quickly get a quote for my online project?</h6>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
@@ -43,9 +43,9 @@ function FAQs() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>
+                <h6>
                   Do you create designs from the ground up or should I provide them to you?
-                </Typography>
+                </h6>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
@@ -59,12 +59,11 @@ function FAQs() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Question 3</Typography>
+                <h6>What is the cost of mobile app development?</h6>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                On the one hand, it isn&apos;t really as expensive as most of us may think. On the other, there is no simple answer to this inquiry due to multiple factors at play. Different developer rates, project complexity, and time it takes to build an app to impact the cost of making a mobile application. Talk to our experts to find out the price of your app!
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -74,13 +73,15 @@ function FAQs() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Question 4</Typography>
+                <h6>How to choose a mobile app development platform?</h6>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
+                <p>Before choosing a mobile app development platform, consider answering these basic questions:</p>
+                <li>Who is the target audience of your app?</li>
+                <li>What are the users’ expectations?</li>
+                <li>What are the development costs?</li>
+                <li>What are the security implications?</li>
+                <li>How well will the mobile app development platform integrate with other platforms?</li>
               </AccordionDetails>
             </Accordion>
           </div>

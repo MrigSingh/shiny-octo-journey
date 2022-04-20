@@ -102,7 +102,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer-sm" style={{backgroundColor: "#212121"}}>
+      {/* <div className="footer-sm" style={{backgroundColor: "#212121"}}>
         <div className="container">
           <div className="row py-4 text-center text-white">
             <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
@@ -127,7 +127,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container mt-5">
         <div className="row text-white justify-content-center mt-3 pb-3">
@@ -138,9 +138,7 @@ function Footer() {
               style={{width: 60, height: 2}}
             />
             <p className="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              ex obcaecati blanditiis reprehenderit ab mollitia voluptatem
-              consectetur?
+            We will help you ship better apps, faster. Our team of expert engineers has created the best user experiences in some of the most popular apps worldwide.
             </p>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
@@ -151,16 +149,16 @@ function Footer() {
             />
             <ul className="list-inline campany-list">
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Website/Webapps</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Mobile App</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Cloud Hosting</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Web development</a>
               </li>
             </ul>
           </div>
@@ -172,20 +170,20 @@ function Footer() {
             />
             <ul className="list-inline campany-list">
               <li>
-                <a href="#"> Your Account</a>
+                <a href="#">Our Services</a>
               </li>
               <li>
                 <a href="#">Become an Affiliate</a>
               </li>
               <li>
-                <a href="#">Create an account</a>
+                <a href="#">FAQs</a>
               </li>
               <li>
                 <a href="#">Help</a>
               </li>
             </ul>
           </div>
-          <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+          {/* <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
             <h5 className="text-capitalize fw-bold">contact</h5>
             <hr
               className="bg-white d-inline-block mb-4"
@@ -205,7 +203,7 @@ function Footer() {
                 <a href="#">Lorem ipsum</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -229,7 +227,7 @@ function Footer() {
       </div>
       <Modal
       open={open}
-      onClose={handleClose}
+      onClose={() => handleClose()}
     >
       <Box sx={style}>
         <InlineWidget

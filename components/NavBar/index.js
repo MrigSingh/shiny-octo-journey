@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { InlineWidget } from "react-calendly";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import Link from 'next/link';
 
 const style = {
   position: 'absolute',
@@ -30,10 +31,9 @@ function NavBar() {
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item"><a className="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li className="nav-item"><Link href="/" passHref><a className="nav-link active" aria-current="page">Home</a></Link></li>
           <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
-          <li className="nav-item"><a className="nav-link" href="#testimonials">Testimonials</a></li>
-          <li className="nav-item"><a className="nav-link" href="#faq">faq</a></li>
+          <li className="nav-item"><a className="nav-link" href="#faq">FAQs</a></li>
           <li className="nav-item"><a className="nav-link" href="#portfolio">portfolio</a></li>
           <li className="nav-item"><a className="nav-link" href="#contact">contact</a>
           </li>

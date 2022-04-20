@@ -29,7 +29,7 @@ function HeroSection() {
       <div className="container">
         <div className="row align-items-center text-white">
           <div className="col-md-6 intros text-start">
-            <h1 className="display-2">
+            <h1 className="display-4">
               <span className="display-2--intro">Welcome to WebsiteWaala</span>
               <span className="display-2--description lh-base">
                 We will help you ship better apps, faster. Our team of expert engineers has created the best user experiences in some of the most popular apps worldwide.
