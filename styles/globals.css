@@ -347,7 +347,9 @@ button,
 select {
   text-transform: none;
 }
-
+.portfolio .tabs .btn-outline-primary + .btn-outline-primary{
+  margin-left: 15px;
+}
 [role=button] {
   cursor: pointer;
 }
